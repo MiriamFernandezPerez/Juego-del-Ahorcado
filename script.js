@@ -212,6 +212,8 @@ function cargarSonido(fuente) {
     sonido.style.display = "none";
     //Activo el autoplay
     sonido.setAttribute("autoplay", "true");
+    //Bajo el volumen del audio
+    sonido.volume = 0.1;
     //Lo añado al body aunque al estar oculto no se verá
     document.body.appendChild(sonido);
 };
